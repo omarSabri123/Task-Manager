@@ -21,6 +21,7 @@ class Task {
        num ++;
        cout<<endl;
        } 
+    // The print function is responsible for printing information about any task.
     void print (Task ob[], int size){
       for(int x = 0 ; x < size ; x++){
          cout<<"Task : "<<x + 1<<endl;
@@ -30,6 +31,7 @@ class Task {
       }
        
     }
+    // Delete function through which any task can be deleted
     void Delete(Task ob [] , int& size){
         cout<<"Deletion location "<<endl;
         string name ;
@@ -69,6 +71,7 @@ class Task {
             cin>>confirmation;
         }while(confirmation == "yes");
     }
+    // Edit function through which you can modify the information of any task
     void Edit(Task ob [] , int size){
         cout<<"Place of modification "<<endl;
         string name ;
@@ -106,6 +109,7 @@ class Task {
             cin>>confirmation;
         }while(confirmation == "yes");
     }
+    // SearchForStatus function can be used to search for the status of any task.
     void SearchForStatus(Task ob [] , int size){
         cout<<"Search for status "<<endl;
         string condition ;
@@ -133,6 +137,7 @@ class Task {
             cin>>confirmation;
         }while(confirmation == "yes");
     }
+    //NumberOfTasks function can be used to determine the number of instances of any task.
     void NumberOfTasks(Task ob [] , int size){
         cout<<"Number of tasks according to the status "<<endl;
         string condition ;
